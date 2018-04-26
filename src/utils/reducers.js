@@ -84,7 +84,7 @@ export function pathFromMeta(meta) {
     return meta.path.split(`/`);
   }
   if (!collection) {
-    throw new Error("Collection is required to construct reducer path.");
+    throw new Error('Collection is required to construct reducer path.');
   }
   let basePath = collection;
   if (doc) {
